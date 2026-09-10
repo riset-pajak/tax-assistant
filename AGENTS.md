@@ -55,8 +55,8 @@ Never modify, create, delete, overwrite, or commit `.env` or any environment-spe
 Use environment variables/configuration in .env on root project. Don't edit this file.
 
 ## Model Baseline
-Embedding: multilingual-e5-large-instruct
-Reranker: bge-reranker-v2-m3
+Embedding: multilingual-e5-large-instruct use jeffh/intfloat-multilingual-e5-large-instruct:q8_0
+Reranker: bge-reranker-v2-m3 use hans-tech/bge-reranker-v2-m3:260522
 LLM baseline: qwen3:8b
 
 Verify actual Ollama compatibility before implementation. Do not silently substitute a model.
