@@ -97,11 +97,11 @@ Sebelum pekerjaan dinyatakan selesai:
 
 **Acceptance Criteria P1**
 
-- [ ] Control plane dapat menghubungi Ollama melalui compute plane.
-- [ ] Browser tidak dapat mengakses Ollama secara langsung.
-- [ ] Konektivitas model embedding, reranker, dan LLM telah diverifikasi.
-- [ ] Failure pada Ollama tidak menyebabkan crash tak terkendali.
-- [ ] Status model dan koneksi dapat diperiksa melalui health endpoint.
+- [V] Control plane dapat menghubungi Ollama melalui compute plane.
+- [V] Browser tidak dapat mengakses Ollama secara langsung.
+- [V] Konektivitas model embedding, reranker, dan LLM telah diverifikasi.
+- [V] Failure pada Ollama tidak menyebabkan crash tak terkendali.
+- [V] Status model dan koneksi dapat diperiksa melalui health endpoint.
 
 ---
 
