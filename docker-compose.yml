@@ -1,0 +1,27 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: taxassistant
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      - DATABASE_URL=postgresql://user:password@postgres:5432/taxassistant
+      - OLLAMA_HOST=http://ollama:11434
+    volumes:
+      - ./app:/app
+      - ./config:/app/config
+    depends_on:
+      - postgres
+
+volumes:
+  pgdata:

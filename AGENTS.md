@@ -14,9 +14,9 @@ control plane:
 
 compute plane:
 - Ollama
-- multilingual-e5-large-instruct
-- bge-reranker-v2-m3
-- configured LLM
+- embedding model multilingual-e5-large-instruct use jeffh/intfloat-multilingual-e5-large-instruct:q8_0
+- reranker model bge-reranker-v2-m3 use hans-tech/bge-reranker-v2-m3:260522
+- configured LLM prefer use qwen3:8b
 
 ## Design Principle
 ADK orchestrates. Tools execute. PostgreSQL stores knowledge. pgvector performs semantic retrieval. Reranker scores relevance. Ollama provides AI inference. Web provides interaction.
@@ -50,6 +50,9 @@ Never hard-code:
 - secrets
 
 Use environment variables/configuration.
+
+Never modify, create, delete, overwrite, or commit `.env` or any environment-specific local configuration file. Treat `.env` as user-local and read-only. When configuration schema changes, update `.env.example` or documented configuration instead.
+Use environment variables/configuration in .env on root project. Don't edit this file.
 
 ## Model Baseline
 Embedding: multilingual-e5-large-instruct

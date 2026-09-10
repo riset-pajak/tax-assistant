@@ -49,51 +49,51 @@ Sebelum pekerjaan dinyatakan selesai:
 
 ## P0 - Infrastruktur dan Baseline Repository
 
-- [ ] Buat struktur aplikasi sesuai `AGENTS.md`:
-  - [ ] `app/agent`
-  - [ ] `app/tools`
-  - [ ] `app/services`
-  - [ ] `app/rag`
-  - [ ] `app/database`
-  - [ ] `app/api`
-  - [ ] `frontend`
-  - [ ] `tests`
-  - [ ] `scripts`
-  - [ ] `docker`
-  - [ ] `config`
-- [ ] Tetapkan struktur package/backend dan konfigurasi aplikasi.
-- [ ] Buat `docker-compose.yml` untuk PostgreSQL, pgvector, Ollama, dan aplikasi.
-- [ ] Buat `.env.example` tanpa nilai rahasia.
-- [ ] Tambahkan configuration loader yang membaca environment.
-- [ ] Siapkan database migration dan schema initialization.
-- [ ] Tambahkan script validasi infrastruktur.
-- [ ] Tambahkan baseline unit tests dan integration tests.
-- [ ] Tambahkan linting, formatting, dan build checks.
-- [ ] Tambahkan workflow CI dasar.
-- [ ] Perbarui dokumentasi struktur repository.
+- [V] Buat struktur aplikasi sesuai `AGENTS.md`:
+  - [V] `app/agent`
+  - [V] `app/tools`
+  - [V] `app/services`
+  - [V] `app/rag`
+  - [V] `app/database`
+  - [V] `app/api`
+  - [V] `frontend`
+  - [V] `tests`
+  - [V] `scripts`
+  - [V] `docker`
+  - [V] `config`
+- [V] Tetapkan struktur package/backend dan konfigurasi aplikasi.
+- [V] Buat `docker-compose.yml` untuk PostgreSQL, pgvector, Ollama, dan aplikasi.
+- [V] Buat `.env.example` tanpa nilai rahasia.
+- [V] Tambahkan configuration loader yang membaca environment.
+- [V] Siapkan database migration dan schema initialization.
+- [V] Tambahkan script validasi infrastruktur.
+- [V] Tambahkan baseline unit tests dan integration tests.
+- [V] Tambahkan linting, formatting, dan build checks.
+- [V] Tambahkan workflow CI dasar.
+- [V] Perbarui dokumentasi struktur repository.
 
 **Acceptance Criteria P0**
 
-- [ ] Repository dapat dibangun dari kondisi bersih.
-- [ ] Database dapat dibuat dan dimigrasikan secara otomatis.
-- [ ] Unit tests dan integration tests dasar lulus.
-- [ ] Dokumentasi menyatakan cara menjalankan aplikasi.
-- [ ] Tidak ada secret atau IP hardcoded.
+- [V] Repository dapat dibangun dari kondisi bersih.
+- [V] Database dapat dibuat dan dimigrasikan secara otomatis.
+- [V] Unit tests dan integration tests dasar lulus.
+- [V] Dokumentasi menyatakan cara menjalankan aplikasi.
+- [V] Tidak ada secret atau IP hardcoded.
 
 ---
 
 ## P1 - Konektivitas Control Plane dan Compute Plane
 
-- [ ] Konfigurasikan koneksi control plane ke Ollama menggunakan environment variable.
-- [ ] Implementasikan Ollama client dengan timeout, retry, dan error mapping.
-- [ ] Buat health check untuk aplikasi dan Ollama.
-- [ ] Validasi model embedding melalui Ollama.
-- [ ] Validasi model reranker melalui Ollama.
-- [ ] Validasi model LLM melalui Ollama.
-- [ ] Verifikasi bahwa model yang dipakai kompatibel dengan runtime Ollama.
-- [ ] Jangan mengganti baseline model tanpa ADR atau persetujuan.
-- [ ] Tambahkan integration test untuk Ollama connectivity.
-- [ ] Dokumentasikan model baseline dan metode validasinya.
+- [V] Konfigurasikan koneksi control plane ke Ollama menggunakan environment variable.
+- [V] Implementasikan Ollama client dengan timeout, retry, dan error mapping.
+- [V] Buat health check untuk aplikasi dan Ollama.
+- [V] Validasi model embedding melalui Ollama.
+- [V] Validasi model reranker melalui Ollama.
+- [V] Validasi model LLM melalui Ollama.
+- [V] Verifikasi bahwa model yang dipakai kompatibel dengan runtime Ollama.
+- [V] Jangan mengganti baseline model tanpa ADR atau persetujuan.
+- [V] Tambahkan integration test untuk Ollama connectivity.
+- [V] Dokumentasikan model baseline dan metode validasinya.
 
 **Acceptance Criteria P1**
 

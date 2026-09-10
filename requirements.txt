@@ -1,0 +1,10 @@
+# Minimal requirements for the application
+# Add more as needed
+python-dotenv>=1.0.0
+psycopg2-binary>=2.9.0
+SQLAlchemy>=2.0.0
+alembic>=1.13.0
+pgvector>=0.2.0
+fastapi>=0.104.0
+uvicorn>=0.27.0
+google-adk>=0.1.0  # placeholder; adjust as needed
